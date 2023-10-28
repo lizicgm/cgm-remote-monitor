@@ -18,6 +18,7 @@ RUN npm install --cache /tmp/empty-cache && \
   # chown node:node /tmp/public
 
 USER node
-EXPOSE 1337
+
+EXPOSE $PORT
 
 CMD ["node", "lib/server/server.js"]
